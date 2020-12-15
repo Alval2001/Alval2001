@@ -1,0 +1,480 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <script src="sources/js/main.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="sources/js/jquery.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="sources/styles/index.css">
+
+    <title>AlexBream</title>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="img-fluid" src="sources/img/logo.png">
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-bars"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+                <ul class="navbar-nav mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#carouselId">Галерея <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#info">Достоинства</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#foodBlock">Блюда</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#depBlock">Рестораны</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sumBlock">Заказать</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin.html">Персоналу</a>
+                    </li>
+                </ul>
+            </div>
+        </div></nav>
+
+    <div class="alerts fixed-bottom px-5 container text-center" id="alerts">
+
+        <div class="alert alert-danger alertNoMenu" role="alert" hidden="true">
+            Вы не выбрали ни одного <a href="#foodBlock" class="alert-link" >блюда</a>
+        </div>
+
+        <div class="alert alert-danger alertNoDep" role="alert" hidden="true">
+            Вы не выбрали ни одного <a href="#depBlock" class="alert-link">заведения</a>
+        </div>
+
+        <div class="alert alert-danger alertNoDepsFind" role="alert" hidden="true">
+            По вашему запросу не найдено ни 1 <a href="#depBlock" class="alert-link">заведения</a>
+        </div>
+
+        <div class="alert alert-danger alertNoDepsChoos" role="alert" hidden="true">
+            Пожалуйста, выбирете расположение <a href="#depBlock" class="alert-link">заведения</a>
+        </div>
+
+    </div>
+
+    <div id="carouselId" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="2000">
+                <img src="sources/img/carousel1.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Наша команда</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="sources/img/carousel2.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Наша доставка</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="sources/img/carousel3.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Наша команда</h5>
+                </div>
+            </div>
+        </div></div>
+
+    <div id="info" class="info container-fluid">
+
+        <div class="row">
+
+            <div class="col-md-4 text-center infBox">
+                <img src="sources/img/dostavka.png" class="img-fluid mt-5">
+                <p>Быстрая доставка </p>
+            </div>
+
+            <div class="col-md-4 text-center infBox">
+                <img src="sources/img/shop.png" class="img-fluid mt-5">
+                <p>Широкая сеть заведений</p>
+            </div>
+
+            <div class="col-md-4 text-center infBox">
+                <img src="sources/img/food.png" class="img-fluid mt-5">
+                <p>Еда на любой вкус</p>
+            </div>
+
+            <div class="col-md-4 text-center infBox">
+                <img src="sources/img/site.png" class="img-fluid mt-5">
+                <p>Удобная система заказа</p>
+            </div>
+
+            <div class="col-md-4 text-center infBox">
+                <img src="sources/img/vozvrat.png" class="img-fluid mt-5">
+                <p>Гарантия качественного сервиса</p>
+            </div>
+
+            <div class="col-md-4 text-center infBox">
+                <img src="sources/img/cashback.png" class="img-fluid mt-5">
+                <p> Кэшбек 15% при оплате картой</p>
+            </div>
+
+        </div>
+
+    <div id="foodBlock" class="foodBlock text-center container-fluid">
+
+        <h1>Меню</h1>
+
+        <div class="row">
+
+            <div class="col-md-3 p-5">
+                <img src="sources/img/salatik.png" class="img-fluid">
+                <h2>Салат оливье</h2>
+                <p>Картофель,колбаса,морковь,яйцо,горошек, майонез</p>
+                <h4 class="priceMenu">100₽</h4>
+                <button class="minusBtn btn btn-outline-secondary">-</button><input type="text" readonly size="1" name="" class="mx-4 costMenu"><button class="plusBtn btn btn-outline-secondary">+</button>
+            </div>
+            <div class="col-md-3 p-5">
+                <img src="sources/img/salatik.png" class="img-fluid">
+                <h2>Салат крабовый</h2>
+                <p>Крабовые палочки,кукуруза,яйцо,рис,майонез</p>
+                <h4 class="priceMenu">120₽</h4>
+                <button class="minusBtn btn btn-outline-secondary">-</button><input type="text" readonly size="1" name="" class="mx-4 costMenu"><button class="plusBtn btn btn-outline-secondary">+</button>
+            </div>
+            <div class="col-md-3 p-5">
+                <img src="sources/img/salatik.png" class="img-fluid">
+                <h2>Салат шуба</h2>
+                <p>Сельдь, яйцо,свёкла,морковь,майонез</p>
+                <h4 class="priceMenu">120₽</h4>
+                <button class="minusBtn btn btn-outline-secondary ">-</button><input type="text" readonly size="1" name="" class="mx-4 costMenu"><button class="plusBtn btn btn-outline-secondary">+</button>
+            </div>
+            <div class="col-md-3 p-5">
+                <img src="sources/img/sup.png" class="img-fluid">
+                <h2>Борщ</h2>
+                <p>Классический украинский рецепт борща</p>
+                <h4 class="priceMenu">150₽</h4>
+                <button class="minusBtn btn btn-outline-secondary">-</button><input type="text" readonly size="1" name="" class="mx-4 costMenu"><button class="plusBtn btn btn-outline-secondary">+</button>
+            </div>
+            <div class="col-md-3 p-5">
+                <img src="sources/img/sup.png" class="img-fluid">
+                <h2>Суп "лапшичка"</h2>
+                <p>Куриный суп с лапшой собственного приготовления</p>
+                <h4 class="priceMenu">100₽</h4>
+                <button class="minusBtn btn btn-outline-secondary">-</button><input type="text" readonly size="1" name="" class="mx-4 costMenu"><button class="plusBtn btn btn-outline-secondary">+</button>
+            </div>
+            <div class="col-md-3 p-5">
+                <img src="sources/img/sup.png" class="img-fluid">
+                <h2>Суп гороховый"</h2>
+                <p>Классический гороховый суп</p>
+                <h4 class="priceMenu">100₽</h4>
+                <button class="minusBtn btn btn-outline-secondary">-</button><input type="text" readonly size="1" name="" class="mx-4 costMenu"><button class="plusBtn btn btn-outline-secondary">+</button>
+            </div>
+            <div class="col-md-3 p-5">
+                <img src="sources/img/osn1.png" class="img-fluid">
+                <h2>Свинной шашлык</h2>
+                <p>Нежное свинное филе приготовленное на углях</p>
+                <h4 class="priceMenu">230₽</h4>
+                <button class="minusBtn btn btn-outline-secondary">-</button><input type="text" readonly size="1" name="" class="mx-4 costMenu"><button class="plusBtn btn btn-outline-secondary">+</button>
+            </div>
+            <div class="col-md-3 p-5">
+                <img src="sources/img/osn1.png" class="img-fluid">
+                <h2 c>Бефстроганов</h2>
+                <p>Тушёная телятина с картофельным пюре и солёными огурчиками</p>
+                <h4 class="priceMenu">250₽</h4>
+                <button class="minusBtn btn btn-outline-secondary">-</button><input type="text" readonly size="1" name="" class="mx-4 costMenu"><button class="plusBtn btn btn-outline-secondary">+</button>
+            </div>
+            <div class="col-md-3 p-5">
+                <img src="sources/img/osn1.png" class="img-fluid">
+                <h2 c>Шаурма</h2>
+                <p>Шаурма с куриным филе</p>
+                <h4 class="priceMenu">150₽</h4>
+                <button class="minusBtn btn btn-outline-secondary">-</button><input type="text" readonly size="1" name="" class="mx-4 costMenu"><button class="plusBtn btn btn-outline-secondary">+</button>
+
+            </div>
+            <div class="col-md-3 p-5">
+                <img src="sources/img/osn1.png" class="img-fluid">
+                <h2>Жареный картофель с котлетами</h2>
+                <p>Жареный картофель с нежными куриными котлетками</p>
+                <h4 class="priceMenu">200₽</h4>
+                <button class="minusBtn btn btn-outline-secondary">-</button><input type="text" readonly size="1" name="" class="mx-4 costMenu"><button class="plusBtn btn btn-outline-secondary">+</button>
+            </div>
+        </div>
+
+    <div id="depBlock" class="depBlock" >
+
+        <div class="container depContainer" data-url="http://exam-2020-1-api.std-900.ist.mospolytech.ru/api/data1?api_key=9b5072bc-c563-49a1-82e7-23f81b831a1e">
+
+            <h1>Выбор предприятия общественного питания</h1>
+
+            <div class="row border border-secondary my-4 px-4">
+                
+                <div class="col-md-6 py-5">
+                    <label>Административный округ</label>
+                    <select class="form-control okrug">
+                        <option value="cent" disabled hidden selected></option>
+                        <option value="cent">Центральный</option>
+                        <option value="sev">Северный</option>
+                        <option value="sev_vost">Северо-Восточный</option>
+                        <option value="vost">Восточный</option>
+                        <option value="y_vost">Юго-Восточный</option>
+                        <option value="y">Южный</option>
+                        <option value="y_zap">Юго-Западный</option>
+                        <option value="zap">Западный</option>
+                        <option value="sev_zap">Северо-Западный</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6 py-5">
+                    <label>Район</label>
+                    <select class="form-control region">
+                    </select>
+                </div>
+
+                <div class="col-md-3 py-5">
+                    <label>Тип</label>
+                    <input class="form-control typeDep" type="text" placeholder="Не обязательно">
+                </div>
+
+                <div class="col-md-3 py-5 ">
+                    <label>Соц. скидки</label>
+                    <select class="socSale form-control">
+                        <option>Без разницы</option>
+                        <option>Есть</option>
+                        <option>Нет</option>
+                    </select>
+                </div>
+
+                <div class="col-md-2 py-5 ">
+                    <label>Показывать по</label>
+                    <select class="form-control perPageForm">
+                        <option>2</option>
+                        <option>5</option>
+                        <option>7</option>
+                        <option>10</option>
+                        <option>15</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4 py-5 text-center d-flex align-items-bottom justify-content-bottom">
+                    <button type="submit" class="btn btn-outline-secondary btn-block findDepBtn" onclick="findDepBtn()">Найти</button>
+
+                </div>
+
+            </div>
+
+            <div class="row my-4 px-4 depsMenu border border-dark" hidden="true">
+
+                <div class="col-md-3 col-3 col-sm-3 text-center py-4">
+                    Название
+                </div>
+
+                <div class="col-md-3 col-3 col-sm-3 text-center py-4">
+                    Тип
+                </div>
+
+                <div class="col-md-3 col-3 col-sm-3 text-center py-4">
+                    Адрес
+                </div>
+
+                <div class="col-md-3 col-3 col-sm-3 text-center py-4">
+                    Действия
+                </div>
+                
+            </div>
+
+            <div class="departments row border border-secondary my-4 px-4 text-center scroll" hidden="true">
+                    
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="container">
+            
+        </div></div>
+
+    <div id="sumBlock" class="sumBlock container">
+        <h1>Дополнительные опции</h1>
+
+        <div class="custom-control custom-checkbox m-4">
+            <input type="checkbox" class="custom-control-input costOption" id="isStudent">
+            <label class="custom-control-label" for="isStudent">Являюсь студентом ВУЗа</label>
+        </div>
+        <div class="custom-control custom-checkbox m-4" >
+            <input type="checkbox" class="custom-control-input costOption" id="isFastDel">
+            <label class="custom-control-label" for="isFastDel">Быстрая доставка</label>
+        </div> 
+
+        <div class="row border border-secondary p-2">
+            <h3 class="col-md-6 finalCost">Итого: 0₽</h3>
+            <button class="col-md-6 btn btn-outline-secondary renderModalBtn" data-toggle="modal" data-target="#modalWind" onclick="renderModal()" disabled>Оформить заказ</button>
+        </div>
+    </div>
+   
+    <div class="row footer" id="contacts">
+            
+            <h3 class="container-fluid text-center p-5">Контакты</h3>
+
+            <div class="col-md-7 d-flex justify-content-center justify-content-md-end">
+
+                <form id="form">
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Введите имя"><br>
+                        <input class="form-control" type="text" placeholder="Введите email"><br>
+                        <textarea class="form-control" type="text" placeholder="Ваше сообщение" cols="60" rows="10"></textarea><br>
+                        <button class="btn btn-lg">Отправить</button>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="col-md-5">
+                
+                <p><img src="sources/logo/skype.png" class="logo"> Skype</p><br>
+                <p><img src="sources/logo/icq.png" class="logo">icq</p><br>
+                <p><img src="sources/logo/mail.png" class="logo">mail</p><br>
+                <p><img src="sources/logo/phone.png" class="logo">phone</p><br>
+                <a href="https://twitter.com"><img src="sources/logo/twitter.png" class="logo"></a>
+                <a href="https://facebook.com"><img src="sources/logo/facebook.png" class="logo"></a>
+                <a href="https://linkin.com"><img src="sources/logo/linked.png" class="logo"></a>
+                <a href="https://google.com"><img src="sources/logo/google.png" class="logo"></a>
+                <a href="https://youtube.com"><img src="sources/logo/youtube.png" class="logo"></a>
+
+            </div></div>
+
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalWindTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom border-secondary">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Оформление заказа</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- КОНТЕНТ МОДАЛЬНОГО ОКНА -->
+                    <h5 class="col-md-12 border-secondary pt-2 mb-4">Позиции</h5>
+                    <div class="container-fluid buyPositions">
+
+                        <div class="row pasteFood">
+                            <!--
+                            <img src="sources/img/eda.png" class="mb-2 pt-2 img-fluid col-md-2 border-top border-secondary">
+
+                            <div class="mb-2 pt-4 col-md-3 border-top border-secondary">
+                                Название
+                            </div >
+
+                            <div  class="mb-2 pt-4 col-md-5 border-top border-secondary">
+                                2 x 100
+                            </div>
+
+                            <div class="mb-2 pt-4 col-md-2 border-top border-secondary">
+                                200
+                            </div>
+                            -->
+                        </div>
+
+                    </div>
+
+                    <div class="container-fluid dopOptions">
+                        <div class="row">
+                            <h5 class="col-md-12 border-top border-secondary pt-2 mb-4">Дополнительные опции</h5>
+
+                            <div class="col-md-5 mb-3 pt-2">Студент ВУЗа</div>
+                            <div class="col-md-7 mb-3 pt-2 text-right modalIsStudent">-10%</div>
+
+                            <div class="col-md-5 mb-3 pt-2">Быстрая доставка</div>
+                            <div class="col-md-7 mb-3 pt-2 text-right modalFastDev">+400₽</div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid depInfo">
+                        <div class="row">
+
+                            <h5 class="col-md-12 border-top border-secondary pt-2 mb-4">Информация о предприятии</h5>
+
+                            <div class="col-md-5 mb-3 pt-2">Название</div>
+                            <div class="col-md-7 mb-3 modalName"></div>
+
+                            <div class="col-md-5 mb-3 pt-2">Округ</div>
+                            <div class="col-md-7 mb-3 modalOkrug"></div>
+
+                            <div class="col-md-5 mb-3 pt-2">Район</div>
+                            <div class="col-md-7 mb-3 modalRegion"></div>
+
+                            <div class="col-md-5 mb-3 pt-2">Адрес</div>
+                            <div class="col-md-7 mb-3 modalAdress"></div>
+
+                            <div class="col-md-5 mb-3 pt-2">Тип заведения</div>
+                            <div class="col-md-7 mb-3 modalDepType"></div>
+
+                        </div>
+                    </div>
+
+                    <div class="container-fluid dostavka ">
+                        <div class="row">
+                            <h5 class="col-md-12 border-top border-secondary pt-2 mb-4">Доставка</h5>
+
+                            <div class="col-md-5 mb-3 pt-2" >Зона доставки</div>
+                            <div class="col-md-7 mb-3">
+                                <select class="form-control okrug">
+                                    <option value="cent" disabled hidden selected></option>
+                                    <option value="cent">Центральный округ</option>
+                                    <option value="sev">Северный округ</option>
+                                    <option value="sev_vost">Северо-Восточный округ</option>
+                                    <option value="vost">Восточный округ</option>
+                                    <option value="y_vost">Юго-Восточный округ</option>
+                                    <option value="y">Южный округ</option>
+                                    <option value="y_zap">Юго-Западный округ</option>
+                                    <option value="zap">Западный округ</option>
+                                    <option value="sev_zap">Северо-Западный округ</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-5 mb-3 pt-2">Адрес доставки</div>
+                            <div class="col-md-7 mb-3">
+                               <input class="form-control" type="text" placeholder="Введите адрес">
+                            </div>
+
+                            <div class="col-md-5 mb-3 pt-2">Фио получателя</div>
+                            <div class="col-md-7 mb-3">
+                                <input class="form-control" type="text" placeholder="Ваше ФИО">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="container-fluid itogo">
+                        <div class="row">
+                                <h5 class="col-md-5 pt-2" >Итого: </h5>
+                                <div class="col-md-7 pt-2 itogoSum" ></div>
+                        </div>
+                    </div>
+
+                    <!-- КОНТЕНТ МОДАЛЬНОГО ОКНА -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+                    <button type="button" class="btn btn-primary">Подтвердить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

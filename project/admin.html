@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="sources/js/admin.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="sources/js/jquery.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="sources/styles/admin.css">
+
+    <title>Admin</title>
+</head>
+<body>
+
+	    <div class="alerts fixed-bottom px-5 container text-center" id="alerts">
+
+	        <div class="alert alert-danger alertNoDepsFind" role="alert" hidden="true">
+	            По вашему запросу не найдено ни 1 <a href="#depBlock" class="alert-link">заведения</a>
+	        </div>
+
+        </div>
+
+
+	<div id="depBlock" class="depBlock" >
+
+        <div class="container depContainer" data-url="http://exam-2020-1-api.std-900.ist.mospolytech.ru/api/data1?api_key=9b5072bc-c563-49a1-82e7-23f81b831a1e">
+
+            <h1 class="text-center">Предприятия общественного питания города Москвы</h1>
+
+            <div class="row border border-secondary my-4 px-4">
+                
+            	<div class="col-md-7 py-5">
+                    <label>Наименование</label>
+                    <input class="form-control nameDep" type="text">
+                </div>
+
+                <div class="col-md-5 py-5">
+                    <label>Административный округ</label>
+                    <select class="form-control okrug">
+                        <option value="bez" selected>Без разницы</option>
+                        <option value="cent">Центральный</option>
+                        <option value="sev">Северный</option>
+                        <option value="sev_vost">Северо-Восточный</option>
+                        <option value="vost">Восточный</option>
+                        <option value="y_vost">Юго-Восточный</option>
+                        <option value="y">Южный</option>
+                        <option value="y_zap">Юго-Западный</option>
+                        <option value="zap">Западный</option>
+                        <option value="sev_zap">Северо-Западный</option>
+                    </select>
+                </div>
+
+                <div class="col-md-2 py-5">
+                	<label>Количество мест</label>
+                	<input class="form-control sitFrom" type="text">
+                </div>
+
+                <div class="col-md-2 py-5">
+                	<label> </label>
+                	<input class="form-control sitTo" type="text">
+                </div>
+
+                <div class="col-md-3 py-5">
+
+                    <label>Является сетевым</label>
+                    <select class="isGlob form-control">
+                        <option>Без разницы</option>
+                        <option>Да</option>
+                        <option>Нет</option>
+                    </select>
+                    
+                </div>
+
+                <div class="col-md-5 py-5">
+                    <label>Район</label>
+                    <select class="form-control region">
+                    	<option value="bez" selected>Без разницы</option>
+                    </select>
+                </div>
+
+                <div class="col-md-2 py-5">
+                	<label>Дата создания</label>
+                	<input class="form-control dateFrom" type="text" placeholder="dd/mm/yyyy">
+                </div>
+
+                <div class="col-md-2 py-5">
+                	<label> </label>
+                	<input class="form-control dateTo" type="text" placeholder="dd/mm/yyyy">
+                </div>
+
+                <div class="col-md-3 py-5 ">
+                    <label>Соц. скидки</label>
+                    <select class="socSale form-control">
+                        <option>Без разницы</option>
+                        <option>Есть</option>
+                        <option>Нет</option>
+                    </select>
+                </div>
+
+                <div class="col-md-5 py-5">
+                    <label>Тип</label>
+                    <input class="form-control typeDep" type="text">
+                </div>
+
+                <div class="col-md-12 pt-5 pb-3 text-center d-flex align-items-bottom justify-content-bottom">
+                    <button class="btn btn-outline-secondary btn-block findDepBtn" onclick="findDepBtn()">Найти</button>
+
+                </div>
+
+                <div class="col-md-12 pb-5 text-center d-flex align-items-bottom justify-content-bottom">
+                    <button class="btn btn-outline-secondary btn-block hideDepBtn" onclick="hideDepBtn()">Скрыть</button>
+
+                </div>
+
+            </div>
+
+            <div class="row my-4 px-4 depsMenu border border-dark" hidden="true">
+
+            	<div class="col-md-1 col-1 col-sm-1 text-center py-4">
+                    ID
+                </div>
+
+                <div class="col-md-3 col-3 col-sm-3 text-center py-4">
+                    Название
+                </div>
+
+                <div class="col-md-2 col-2 col-sm-2 text-center py-4">
+                    Тип
+                </div>
+
+                <div class="col-md-3 col-3 col-sm-3 text-center py-4">
+                    Адрес
+                </div>
+
+                <div class="col-md-3 col-3 col-sm-3 text-center py-4">
+                    Действия
+                </div>
+                
+            </div>
+
+            <div class="departments row border border-secondary my-4 px-4 text-center scroll" hidden="true">
+                    
+            </div>
+
+            <div class="row my-4 px-4">
+
+            	<div class="col-md-12 p-2 text-center d-flex align-items-bottom justify-content-bottom">
+                    <button class="btn btn-outline-secondary btn-block addDep" data-toggle="modal" data-target="#addDepModal">Добавить запись</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+		<div class="modal fade" id="addDepModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header border-bottom border-secondary">
+						<h5 class="modal-title" id="exampleModalLongTitle">Добавить запись</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+				<div class="modal-body">
+			<!--Контент модального окна-->
+
+				<div class="col-md-12 py-1">
+                    <label>Наименование</label>
+                    <input class="form-control modalAddName" type="text">
+                </div>
+
+                <div class="col-md-12 py-1">
+                    <label>Является сетевым</label>
+                    <select class="modalAddIsGlob form-control">
+                        <option>Да</option>
+                        <option>Нет</option>
+                    </select>
+                </div>
+
+                <div class="col-md-12 py-1">
+                    <label>Название управляющей компании</label>
+                    <input class="form-control modalAddOrg" type="text">
+                </div>
+
+                <div class="col-md-12 py-1">
+                    <label>Тип</label>
+                    <input class="form-control modalAddType" type="text">
+                </div>
+
+                <div class="col-md-12 py-1">
+                    <label>Административный округ</label>
+                    <select class="form-control modalAddokrug">
+                        <option value="cent" selected>Центральный</option>
+                        <option value="sev">Северный</option>
+                        <option value="sev_vost">Северо-Восточный</option>
+                        <option value="vost">Восточный</option>
+                        <option value="y_vost">Юго-Восточный</option>
+                        <option value="y">Южный</option>
+                        <option value="y_zap">Юго-Западный</option>
+                        <option value="zap">Западный</option>
+                        <option value="sev_zap">Северо-Западный</option>
+                    </select>
+                </div>
+
+                <div class="col-md-12 py-1">
+                    <label>Район</label>
+                    <select class="form-control modalAddRegion">
+                    </select>
+                </div>
+
+                <div class="col-md-12 py-1">
+                    <label>Адрес</label>
+                    <input class="form-control modalAddAdress" type="text">
+                </div>
+
+                <div class="col-md-12 py-1">
+                    <label>Число посадочных мест</label>
+                    <input class="form-control modalAddSitCount" type="text">
+                </div>
+
+                <div class="col-md-12 py-1">
+                    <label>Социальные льготы</label>
+                    <select class="modalAddSocSale form-control">
+                        <option>Да</option>
+                        <option>Нет</option>
+                    </select>
+                </div>
+
+                <div class="col-md-12 py-1">
+                    <label>Телефон</label>
+                    <input class="form-control modalAddTelep" type="text">
+                </div>
+
+                <div class="col-md-12 py-2 mt-2 border border-danger modalAddNoFields" hidden="true">
+                	Введите все необходимые поля!
+                </div>
+			<!--Контент модального окна-->
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+			<button type="button" class="btn btn-primary" onclick="addJsonBtn()">Добавить</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

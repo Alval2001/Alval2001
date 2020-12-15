@@ -1,0 +1,70 @@
+/*
+вишнево-красный: 790604
+лазурный- #007ba7
+ оранжевый - FFA500
+серый: 666666 808080 a0a0a0
+*/
+
+.scroll2
+{
+	height:200px;
+    overflow-y: scroll;
+}
+
+.scroll5
+{
+	height:500px;
+    overflow-y: scroll;
+}
+.scroll7
+{
+	height:700px;
+    overflow-y: scroll;	
+}
+.scroll10
+{
+	height:1000px;
+    overflow-y: scroll;	
+}
+
+.scroll15
+{
+	height:1500px;
+    overflow-y: scroll;	
+}
+
+.infoBlock
+{
+	color: white;
+	background-color: #790604;
+}
+
+.navbar {
+    background-color:gray;
+    border-bottom: 1px solid groove;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+
+#carouselId
+{
+	margin-top: 55px;
+}
+
+.us, .info
+{
+	object-fit: cover;
+}
+
+.infBox {
+    background-color: #790604;
+    color: #ff6a00;
+    height: 300px;
+}
+.logo
+{
+	height: 50px;
+	margin-right: 10px;
+}
