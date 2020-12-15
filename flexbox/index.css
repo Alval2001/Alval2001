@@ -1,0 +1,42 @@
+#header{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.headLink{
+	width: 150px;
+  	height: 50px;
+  	background: grey;
+  	text-align: center;
+  	line-height: 50px;
+  	margin-top: 2%;
+}
+
+.headLink2{
+	margin-top: 2%;
+	width: 400px;
+  	height: 400px;
+  	background: blue;
+  	text-align: center;
+  	line-height: 400px;
+  	font-size: 50px;
+  	font-weight: bold;
+}
+
+h1{
+	margin-top: 2%;
+	color: darkred;
+	width: 100%;
+	line-height: 50px;
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+
+}
