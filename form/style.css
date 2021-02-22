@@ -1,0 +1,78 @@
+html {
+    background-image: url(fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background-color:gray;
+    border-radius:1px;
+}
+
+.auth{
+font-family: sans-serif;
+font-size:50px;
+color:orangered;
+text-transform:uppercase;
+padding:0 20px;
+}
+
+.form input{
+    font-size:20px;
+    padding:5px;
+    margin: 5px 0;
+    outline-color:black;
+        
+}
+.forgot-p{
+    color:#4d4c4c;
+    font-size: 18px;
+    text-decoration:none;
+    font-weight: bold;
+    margine:5px 0;
+    transition: .2s;
+
+}
+
+.forgot-p:hover {
+    color: #f55e18;
+    border: none;
+}
+
+.form-btn {
+    font-size:25px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top:5px;
+    margin-bottom:15px;
+    padding: 5px 70px;
+    color:#fff;
+    background:linear-gradient(25deg,red,#ff5100);
+    border:none;
+    outline:none;
+    border-radius:5px;
+}
+
+    .form-btn:hover {
+        background: linear-gradient(25deg,#ff5100,red);
+    }
+    .form-btn:active {
+        background: linear-gradient(25deg,#ff5100,red);
+    }

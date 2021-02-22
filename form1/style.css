@@ -1,0 +1,28 @@
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: aquamarine;
+    color: forestgreen;
+    font-family: Helvetica, sans-serif;
+}
+
+form {
+    line-height: 25px;
+    border: 3px solid;
+    border-radius: 5%;
+    border-style: solid;
+    padding: 5px;
+    background-color:antiquewhite;
+    
+}
+.text {
+    text-align: center;
+    color : black;
+}
+
+input {
+    border: 1px ridge rgb(20, 60, 97);
+    border-radius: 3px;
+}
