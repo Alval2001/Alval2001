@@ -1,60 +1,74 @@
-body{
-	margin: 0;
-	padding: 0;
-	background-color: #BE92FA;
+body {
+    background-color: forestgreen;
 }
 
-main{
-	width: 600px;
-	height: 600px;
-	margin: 0 auto;
-	padding: 0;
+.logo {
+    width: 40px;
+    height: 40px;
 }
 
-h1{
-	text-align: center;
-	color: white;
-	text-shadow: 1px 1px 2px black;
-	
+.navbarcolor {
+    background-color: #b6ff00;
+    display: flex;
+    
 }
 
-.hitBox{
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	width: 195px;
-	height: 195px;
-	border: 1px solid white;
-	float: left;
-	cursor: pointer;
-	line-height: 195px;
-	font-size: 120px;
-	background-color: #DE5F59;
-	color: white;
-	text-shadow: 1px 1px 5px black;
+a {
+    text-decoration: none;
+    color: black;
 }
 
-.hitBox:hover{
-	border: 1px solid black;
+    a:hover {
+        color: black; /* Цвет текста */
+    }
+
+.btn-color {
+    background-color: #FFFFCC;
+    color: black;
+    border-color: black;
+    border-radius: 10px;
 }
 
-#refresh{
-	line-height: 100px;
-	font-size: 60px;
-	text-align: center;
-	margin: 0 auto;
-	margin-top: 30px;
-	width: 600px;
-	height: 100px;
-	border: 1px solid white;
-	box-shadow: 1px black;
-	cursor: pointer;
-	background-color: #DE5F59;
-	color: white;
-	text-shadow: 1px 1px 2px black;
-	box-shadow: 0 0 10px black;
+    .btn-color:hover {
+        background-color: white;
+        border-color: #CC9933;
+        color: #CC9933;
+    }
+
+.photo {
+    width: 400px;
+    height: 400px;
+}
+img{
+    width: 200px;
+    height:300px;
 }
 
-#refresh:hover{
-	border: 1px solid black;
+.mar {
+    margin-right: auto;
+}
+
+.col-to-action {
+    background-color: #b6ff00
+}
+
+.btn-color-two {
+    background-color: white;
+    color: #CC9933;
+    border-color: #CC9933;
+    border-radius: 10px;
+}
+
+    .btn-color-two:hover {
+        background-color: #FFFFCC;
+        color: black;
+        border-color: black;
+        border-radius: 10px;
+    }
+
+.row {
+    grid-gap: 13px;
+}
+footer{
+    color: black;
 }

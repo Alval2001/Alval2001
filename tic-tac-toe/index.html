@@ -1,30 +1,150 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<title>tic-tac-toe</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="script.js"></script> 
-
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <title>Футбольные курсы</title>
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbarcolor fixed-top border-bottom">
+            <a class="navbar-brand" href="#">
+                <img class="image-fluid logo" src="https://cdn.icon-icons.com/icons2/1036/PNG/128/Soccer_Ball_icon-icons.com_76265.png">
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-bars"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+                <ul class="navbar-nav mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#продукт">Курс<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Окурсе">Описание</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Характеристики">Преимущества</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Контакты">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-	<h1>Крестики нолики</h1>
-	<br><br>
-	<h1 id = "who">Ход игрока 1</h1>
+    <div class="container-fluid banner">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-6 py-5 my-auto">
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1"></div>
+                        <h1 class="pb-3"><a id="продукт">"Лешин" курс</a></h1>
+                        <p class="pb-3">Тебе нечем заняться дом? Ты не можешь найти друзей? Тебя не устраивает твоя физическая форма? Тогда тебе к нам </p>
+                        <div class="btn btn-lg btn-color mb-3 mar">Подробнее</div>
+                        <div class="btn btn-lg btn-color mb-3">Заказать</div>
+                    </div>
+                </div>
 
-	<main>
-		<div onclick="setBox('box1');" id="box1" class = hitBox></div>
-		<div onclick="setBox('box2');" id="box2" class = hitBox></div>
-		<div onclick="setBox('box3');" id="box3" class = hitBox></div>
-		<div onclick="setBox('box4');" id="box4" class = hitBox></div>
-		<div onclick="setBox('box5');" id="box5" class = hitBox></div>
-		<div onclick="setBox('box6');" id="box6" class = hitBox></div>
-		<div onclick="setBox('box7');" id="box7" class = hitBox></div>
-		<div onclick="setBox('box8');" id="box8" class = hitBox></div>
-		<div onclick="setBox('box9');" id="box9" class = hitBox></div>
-	</main>
+                <div class="col-lg-6 p-5 d-flex justify-content-center align-items-center">
+                    <img class="photo" src="https://phototass3.cdnvideo.ru/width/1200_4ce85301/tass/m2/uploads/i/20170514/4492261.jpg">
+                </div>
+            </div>
+        </div>
 
-	<div id = 'refresh' onclick="location.reload()" >Начать с начала</div>
+        <section class="col-to-action py-5">
+            <div class="container text-center w-75">
+                <h2 class="mb-5"><a id="Окурсе">О Курсе</a></h2>
+                <div class="heading-line mx-auto">
+                    <p class="pb-3">Выпускники наших курсов успешно реализуют свои умения в  разных девизионах российского футбола , начиная от 3 и заканчивая Премьер лигой.
+                    Вас все еще что-то смущает? Тогда продолжим, В штаб наших тренеров входят тренеры с европейским опытом.Так,все еще не уверены? Наш главный козырь это наш руководитель-Валявский Алексей Студент группы 191-352 Московского Политехнического университета.  </p>
+                    <div class="btn btn-lg btn-color-two mb-3">Заказать</div>
+                </div>
+            </div>
+        </section>
+        <section class="Characteristics">
+            <div class=" text-center py-5">
+                <h2 class="pb-5"><a id="Характеристики">Преимущества</a></h2>
+                <p>Будешь быстрым как сайгак-приходи скорей ,чудак.</p>
+                <div class="heading-line mx-auto"></div>
+            </div>
+            <div class="container  ">
+                <div class="row ">
+                    <div class="col-lg-3 text-center">
+                        <img class="" src="https://sch1561uz.mskobr.ru/users_files/rromanov/images/1448638080.jpg">
+                        <h4 class="py-3">Тренеры</h4>
+                        <p class="pb-3">Зидан и Гвардиола отдыхают.</p>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <img class="" src="http://sport-city.ru/wp-content/uploads/2016/07/S12005EZW-2.jpg">
+                        <h4 class="py-3">Инвентарь</h4>
+                        <p class="pb-3">  Есть куда и чем быть.</p>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <img class="" src="https://im0-tub-ru.yandex.net/i?id=7e0c2f850865c1745fbcfba4b8a3b5a9&n=13">
+                        <h4 class="py-3">Сколько стоит?</h4>
+                        <p class="pb-3">  Договоримся.</p>
+                    </div>
+                    
+                </div>
+            </div>
+    </div>
+    </div>
+    </section>
+    <section class="col-to-action">
+        <div class="container">
+            <div class="text-center py-5">
+                <h2 class="pb-3"><a id="Контакты">Контакты</a></h2>
+                <div class="heading-line mx-auto"></div>
+                <dev class="row">
+                    <div class="col-lg-6">
+                        <form class="container text-center w-75">
+                            <div class="form-group">
+                                <label for="email">Электронная почта</label>
+                                <input class="form-control" type="email" id="email" placeholder="Введите адрес электронной почты">
+                                <small id="emailHelp" class="form-text text-muted">Мы не передаем ваши данные третьим лицам</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Имя</label>
+                                <input class="form-control" type="text" name="name" id="name" placeholder="Введите ваше имя">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Сообщение</label>
+                                <input class="form-control" type="text" name="message" id="message" cols="30" rows="10" placeholder="Оставьте отзыв">
+
+                            </div>
+                            <button type="submit" class="btn btn-lg btn-color">Отправить</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 my-auto ">
+                        <p><i class="fa fa-instagram" aria-hidden="true"> <a href="https://www.instagram.com/alex_bream/">Мой инстраграм</a></i></p>
+                        <p><i class="fa fa-vk" aria-hidden="true"><a href="https://vk.com/alval2001">Моя страница в вк</a></i></p>
+                    </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="copyright text-center py-3 border-top text-muted">
+            <p>Валявский Алексей © 2021</p>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
