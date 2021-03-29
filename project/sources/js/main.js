@@ -123,7 +123,7 @@ function createDepChooseBtn(record)
     return itemElement2;
 }
 
-//Рендерит и создает 1 элемент (По сути 4. 1 строку)
+//Рендерит и создает 1 элемент (4 элемента в 1 строке- Имя Тип Адрес Кнопка выбора)
 function createListItemElement(records) {
 
     itemElement.append(createDepName(records));
